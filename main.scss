@@ -10,8 +10,13 @@ html {
     color: #F2F2F2;
 }
 .container {
+    width: 100%;
     padding-top: 41px;
     background:  #141118;
+}
+.wrapper-contain {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 
