@@ -21,7 +21,7 @@ html {
 }
 
 
-#header {
+.header {
     display: flex;
     width: 1140px;
     height: 57px;
@@ -215,6 +215,7 @@ html {
             padding: 19px 50px;
             border-radius: 10px;
             cursor: pointer;
+            border: none;
             background: radial-gradient(146.11% 537.47% at 100% 50%, rgba(234, 91, 219, 0.5) 0%, rgba(20, 17, 24, 0) 100%);
             img {
                 margin-left: 15px;
@@ -226,7 +227,7 @@ html {
         align-items: flex-end;
     }
 }
-#footer {
+.footer {
     width: 100%;
     margin-top: 183px;
     height: 283px;
@@ -287,6 +288,213 @@ html {
                 }
                 p ~ p{
                     margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1440px) {
+    .container {
+        .wrapper-contain {
+            .header {
+                padding-left: 10px;
+                padding-right: 10px;
+                width: 100%;
+                justify-content: space-between;
+                .logo {
+                    font-size: 30px;
+                }
+                .navbar {
+                    margin-left: 0px;
+                    li {
+                        display: none;
+                    }
+                }
+                .header__btn {
+                    margin-left: 0;
+                }
+            }
+            .overView {
+                width: 100%;
+                padding-left: 10px;
+                padding-right: 10px;
+                gap: 20px;
+                &__col2 {
+                    width: 66%;
+                    &--title {
+                        font-size: 30px;
+                        width: 100%;
+                        button {
+                            font-size: 13px;
+                            transform: translateY(0px);
+                            outline: none;
+                        }
+                    }
+                    &--img {
+                        width: 100%;
+                        gap: 20px;
+                        &--item1 {
+                            margin-top: 0;
+                            margin-right: 0;
+                            width: 50%;
+                            img {
+                                width: 100%;
+                                
+                            }
+                            .item__des {
+                                margin-top: 9px;
+                                .item__des--price {
+                                    font-size: 15px;
+                                }
+                                .item__des--name {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                        &--item2 {
+                            width: 50%;
+                            margin-top: -80px;
+                            img {
+                                width: 100%;
+                            }
+                            .item__des {
+                                margin-top: 9px;
+                                .item__des--price {
+                                    font-size: 15px;
+                                }
+                                .item__des--name {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &__col1 {
+                    width: 33%;
+                    padding-top: 8px;
+                    .title {
+                        font-size: 15px;
+                    }
+                    .overView__col2--img--item {
+                        img {
+                            width: 100%;
+                        }
+                        .item__des {
+                            margin-top: 9px;
+                            .item__des--price {
+                                font-size: 15px;
+                            }
+                            .item__des--name {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+            .cripto {
+                padding-left: 10px;
+                padding-right: 10px;
+                width: 100%;
+                gap: 10px;
+                margin: 55px auto 55px auto;
+                .cripto--item {
+                    width: 20%;
+                    img {
+                        width: 40%;
+                        margin-right: 5px;
+                    }
+                    p {
+                        font-size: 10px;
+                    }
+                }
+            }
+            .cup {
+                width: 100%;
+                &__title {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    width: 100%;
+                    h2 {
+                        font-size: 35px;
+                    }
+                    p {
+                        width: 100%;
+                    }
+                }
+                &__img {
+                    width: 100%;
+                    img {
+                        width: 20%;
+                    }
+                }
+                &__btn {
+                    padding: 10px 12px;
+                    margin-top: 30px;
+                    margin-left: 35%;
+                }
+            }
+            .group__card {
+                padding-left: 10px;
+                padding-right: 10px;
+                width: 100%;
+                &--title {
+                    font-size: 34px;
+                }
+                p {
+                    width: 100%;
+                    margin: 20px auto 40px auto;
+                }
+                &--img {
+                    width: 100%;
+                    img {
+                        width: 33%;
+                    }
+                }
+                &--sub {
+                    margin-top: 60px;
+                    .group__card--title1 {
+                        font-size: 20px;
+                    }
+                    button {
+                        padding: 5px 11px;
+                        img {
+                            margin-left: 3px;
+                        }
+                    }
+                }
+            }
+            .footer {
+                margin-top: 100px;  
+                height: max-content;
+                .wrapper {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    .join {
+                        width: 100%;
+                        .join__input {
+                            width: 100%;
+                            justify-content: space-between;
+                            input {
+                                margin-right: 0px;
+                            }
+                            button {
+                                padding: 15px 24px;
+                            }
+                        }
+                    }
+                    .navigation {
+                        width: 100%;
+                        margin: 20px 0;
+                        gap: 10px;
+                        .col {
+                            text-align: center;
+                            h2 {
+                                font-size: 25px;
+                            }
+                        }
+                    }
                 }
             }
         }
